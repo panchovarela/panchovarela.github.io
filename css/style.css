@@ -60,6 +60,7 @@ header, header div, header nav ul, footer{
 
 header div{
     right: 155px;
+    margin: 10px;
 }
 
 header nav{
