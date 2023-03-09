@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url('../fonts/roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url('../fonts/roboto/Roboto-Light.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto-Medium';
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    font-family: 'Roboto-Light';
+    text-decoration: none;
+}
+
+a, .tituloAmpersand, #promo span{
+    color: white;
+}
+
+footer{
+    height: 160px;
+}
+
+footer div{
+    left: 180px;
+}
+
+footer, footer div, footer ul, header div, header nav{
+    position: relative;
+}
+
+footer, footer div, header, header div, header nav ul, main section{
+    display: flex;
+    flex-direction: row;
+}
+
+footer, footer div, header, header div, header nav ul{
+    align-items: center;
+}
+
+footer ul{
+    right: 220px;
+}
+
+footer ul li, header nav ul li, main section article ol li{
+    margin: 10px;
+}
+
+header, header div, header nav ul, footer{
+    background-color: #222222;
+    justify-content: space-around;
+}
+
+header div{
+    right: 155px;
+}
+
+header nav{
+    left: 150px;
+}
+
+h2{
+    color:#FC200C;
+}
+
+main section{
+    background-color: #E5E5E5;
+    justify-content: center;
+}
+
+main section article{
+    background-color: white;
+    margin: 35px 3px;
+    width: 600px;
+}
+
+main section article h2{
+    left: 800px;
+    top: 161px;
+}
+
+main section article h2, main section article h3, main section article img, main section article ol, #promo h2{
+    position: absolute;
+}
+
+main section article h3{
+    left: 665px;
+    top: 247px;
+}
+
+main section article img{
+    left: 965px;
+    top: 267px;
+}
+
+main section article ol{
+    left: 650px;
+    top: 285px;
+    width: 173px;
+}
+
+main section article ol li{
+    width: 100%;
+}
+
+.tituloPizza{
+    color: #39B24A;
+}
+
+#promo{
+    background-image: url('../img/delivery.jpg');
+    border-radius: 5px;
+    height: 350px;
+    width: 490px;
+}
+
+#promo h2{
+    left: 100px;
+    top: 155px;
+}
