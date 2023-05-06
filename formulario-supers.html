@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Súpers</title>
+    <link rel="stylesheet" href="build/css/supers/style.css">
+</head>
+<body>
+    <header>
+        <p><span>20% de descuento en todos los productos!</span></p>
+        <div>
+            <img src="build/img/notebook.png" alt="Notebook">
+            <h1>Nombre Tienda</h1>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <ul type="none">
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Registrarme</a></li>
+                <li><a href="#">Ingresar</a></li>
+            </ul>
+        </nav>
+        <form action="" method="get">
+            <h2>Añadí a tu super!</h2>
+            <p>Agregá a tu personaje favorito completando las opciones.</p>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div>
+                <label>Especie</label>
+                <select name="especie" required>
+                    <option value="amazona">Amazona</option>
+                    <option value="atlante">Atlante</option>
+                    <option value="elemental">Elemental</option>
+                    <option value="homoMagi">Homo Magi</option>
+                    <option value="humano">Humano</option>
+                    <option value="kryptoniano">Kryptoniano</option>
+                    <option value="marciano">Marciano</option>
+                    <option value="tamaraneano">Tamaraneano</option>
+                </select>
+            </div>
+            <div>
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha">
+            </div>
+            <div>
+                <label for="archivo">Agregar foto</label>
+                <input type="file" name="archivo" id="archivo" accept=".jpg, .png">
+            </div>
+            <div>
+                <textarea name="descripcion" id="descripcion" placeholder="Descripción"></textarea>
+            </div>
+            <div>
+                <div>
+                    <legend>Poderes</legend>
+                    <span>
+                        <input type="checkbox" name="poder" id="volar" value="volar">
+                        <label for="volar">Volar</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="poder" id="superinteligencia" value="superinteligencia">
+                        <label for="superinteligencia">Superinteligencia</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="poder" id="vistaRayo" value="vistaRayo">
+                        <label for="vistaRayo">Vista de rayo láser</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="poder" id="billeteraGorda" value="billeteraGorda">
+                        <label for="billeteraGorda">Billetera gorda</label>
+                    </span>
+                </div>
+                <hr>
+                <div>
+                    <legend>Tipo de personaje</legend>
+                    <span>
+                        <input type="radio" name="tipo" id="heroeHeroina" value="heroeHeroina">
+                        <label for="heroeHeroina">Héroe / Heroina</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="tipo" id="villanoVillana" value="villanoVillana">
+                        <label for="villanoVillana">Villano / Villana</label>
+                    </span>
+                </div>
+            </div>
+            <button type="submit">Añadir</button>
+        </form>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>

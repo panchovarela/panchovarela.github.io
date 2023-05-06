@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="build/css/index/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 bg-dark-subtle text-emphasis-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Francisco Varela</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobreMi">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="d-flex flex-column align-items-center">
+            <div>
+                <img src="build/img/avatars.svg" alt="Avatar" class="mt-5">
+                <div class="heading">
+                    <h1 class="fs-2">Francisco Varela</h1>
+                    <div class="d-flex align-items-center justify-content-between"><hr><i class="fa-solid fa-star fa-2xl"></i><hr></div>
+                    <p>Maquetador web - Entusiasta - Autodidacta</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="container d-flex flex-column align-items-center mb-5" id="portfolio">
+            <div class="heading">
+                <h2>Portfolio</h2>
+                <div class="d-flex align-items-center justify-content-between"><hr><i class="fa-solid fa-star fa-2xl"></i><hr></div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+
+                <!-- Cards -->
+                <div class="col">
+                    <div class="card border border-0" data-bs-toggle="modal" data-bs-target="#lemon-pie-modal">
+                        <img src="build/img/lemon-pie.jpeg" class="card-img-top" alt="Lemon Pie">
+                        <div class="card-body">
+                            <h5 class="card-title">Lemon Pie</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border border-0" data-bs-toggle="modal" data-bs-target="#cv-batman-modal">
+                        <img src="build/img/cv-batman.png" class="card-img-top" alt="CV Batman">
+                        <div class="card-body">
+                            <h5 class="card-title">CV Batman</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border border-0" data-bs-toggle="modal" data-bs-target="#supers-modal">
+                        <img src="build/img/supers.png" class="card-img-top" alt="Súpers">
+                        <div class="card-body">
+                            <h5 class="card-title">Súpers</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border border-0" data-bs-toggle="modal" data-bs-target="#pet-shop-modal">
+                        <img src="build/img/pet-shop.jpeg" class="card-img-top" alt="Pet Shop">
+                        <div class="card-body">
+                            <h5 class="card-title">Pet Shop</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border border-0" data-bs-toggle="modal" data-bs-target="#pizzeria-modal">
+                        <img src="build/img/pizzeria.jpeg" class="card-img-top" alt="Pizzería">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizzería</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border border-0" data-bs-toggle="modal" data-bs-target="#game-shop-modal">
+                        <img src="build/img/game-shop.jpeg" class="card-img-top" alt="Game Shop">
+                        <div class="card-body">
+                            <h5 class="card-title">Game Shop</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modals -->
+            <div class="modal fade" id="lemon-pie-modal" tabindex="-1" aria-labelledby="lemon-pie-modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="lemon-pie-modal-label">Lemon Pie</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="build/img/lemon-pie.jpeg" class="card-img-top" alt="Lemon Pie">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="lemon-pie.html" data-bs-toggle="tooltip" title="Tooltip" class="btnPersonalizado">Visitar Sitio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="cv-batman-modal" tabindex="-1" aria-labelledby="cv-batman-modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="cv-batman-modal-label">CV Batman</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="build/img/cv-batman.png" class="card-img-top" alt="CV Batman">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="cv-batman.html" data-bs-toggle="tooltip" title="Tooltip" class="btnPersonalizado">Visitar Sitio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="supers-modal" tabindex="-1" aria-labelledby="supers-modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="supers-modal-label">Súpers</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="build/img/supers.png" class="card-img-top" alt="Súpers">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="supers.html" data-bs-toggle="tooltip" title="Tooltip" class="btnPersonalizado">Visitar Sitio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="pet-shop-modal" tabindex="-1" aria-labelledby="pet-shop-modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="pet-shop-modal-label">Pet Shop</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="build/img/pet-shop.jpeg" class="card-img-top" alt="Pet Shop">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="pet-shop.html" data-bs-toggle="tooltip" title="Tooltip" class="btnPersonalizado">Visitar Sitio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="pizzeria-modal" tabindex="-1" aria-labelledby="pizzeria-modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="pizzeria-modal-label">Pizzería</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="build/img/pizzeria.jpeg" class="card-img-top" alt="Pizzería">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="pizzeria.html" data-bs-toggle="tooltip" title="Tooltip" class="btnPersonalizado">Visitar Sitio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="game-shop-modal" tabindex="-1" aria-labelledby="game-shop-modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="game-shop-modal-label">Game Shop</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="build/img/game-shop.jpeg" class="card-img-top" alt="Game Shop">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="game-shop.html" data-bs-toggle="tooltip" title="Tooltip" class="btnPersonalizado">Visitar Sitio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Mí -->
+        <section class="container-fluid d-flex flex-column align-items-center" id="sobreMi">
+            <div class="heading">
+                <h2>Sobre Mí</h2>
+                <div class="d-flex align-items-center justify-content-between"><hr><i class="fa-solid fa-star fa-2xl"></i><hr></div>
+            </div>
+            <div class="container d-flex flex-column flex-lg-row justify-content-between">
+                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti incidunt accusantium officia doloremque ipsa modi quasi obcaecati laudantium quisquam neque ab odio, voluptatem necessitatibus eligendi!</p>
+                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. A sunt deserunt porro illum quisquam, aspernatur delectus at quibusdam perspiciatis quo.</p>
+            </div>
+            <button class="btnPersonalizado"><i class="fa-solid fa-download me-2"></i>Descargar CV</button>
+        </section>
+
+        <!-- Contacto -->
+        <section class="container-fluid d-flex flex-column align-items-center" id="contacto">
+            <div class="heading">
+                <h2>Contáctame</h2>
+                <div class="d-flex align-items-center justify-content-between"><hr><i class="fa-solid fa-star fa-2xl"></i><hr></div>
+            </div>
+            <form action="" method="get">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingText" placeholder="Nombre Apellido" required>
+                    <label for="floatingText">Nombre Completo</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="nombre@ejemplo.com" required>
+                    <label for="floatingEmail">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="floatingTel" placeholder="+54 9 11 1234-5678" required>
+                    <label for="floatingTel">Número de Teléfono</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Deja tu mensaje aquí." id="floatingTextarea" style="height: 100px" required></textarea>
+                    <label for="floatingTextarea">Mensaje</label>
+                </div>
+                <button type="submit" class="btnPersonalizado">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Información adicional y redes -->
+    <footer class="container-fluid d-flex flex-column flex-lg-row align-items-center justify-content-evenly text-center">
+        <div>
+            <h5 class="text-uppercase">Mi Lugar</h5>
+            <p class="mb-0 mt-3">Calle N</p>
+            <p>Ciudad, Estado CP</p>
+        </div>
+        <div>
+            <h5 class="text-uppercase">Sigamos Conectados</h5>
+            <ul type="none" class="d-flex justify-content-center">
+                <li class="me-2"><a href="https://www.facebook.com/nike/?locale=es_LA"><i class="fa-brands fa-facebook-f fa-xl"></i></a></li>
+                <li class="mx-2"><a href="https://www.instagram.com/nike/?hl=es"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                <li class="mx-2"><a href=""><i class="fa-brands fa-linkedin-in fa-xl"></i></a></li>
+                <li class="ms-2"><a href="https://github.com/panchovarela"><i class="fa-brands fa-github fa-xl"></i></a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="text-uppercase">Sobre Mí</h5>
+            <p>Soy una persona creativa y con ansias de aprender. Tengo conocimientos de HTML, CSS y Bootstrap.</p>
+        </div>
+    </footer>
+    <div class="d-flex align-items-center justify-content-center copyright">
+        <p>Copyright © Mi sitio 2023</p>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

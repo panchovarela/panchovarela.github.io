@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+/*** Colores ***/
+/*** Media Queries ***/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*** Colores ***/
+/*** Media Queries ***/
+body {
+  background-color: #F3F3F3;
+  font-family: "Roboto", sans-serif;
+}
+body header {
+  align-items: center;
+  background-color: #222222;
+  color: #FFFFFF;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+}
+body header div {
+  margin-left: 20px;
+}
+body header i[class="fa-sharp fa-solid fa-bars fa-2xl"] {
+  margin-right: 20px;
+}
+body header nav ul {
+  display: none;
+  margin-right: 35px;
+}
+body header nav ul li {
+  margin: 0 8px;
+}
+body header nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+body header nav ul li a i {
+  color: #D01418;
+  margin-left: 38px;
+}
+@media (min-width: 1024px) {
+  body header div {
+    margin-left: 35px;
+  }
+  body header i[class="fa-sharp fa-solid fa-bars fa-2xl"] {
+    display: none;
+  }
+  body header nav ul {
+    display: flex;
+  }
+}
+body main {
+  text-align: center;
+}
+body main section div article hr {
+  height: 0;
+}
+body main section h2 {
+  font-size: 33px;
+  margin: 40px 0 20px;
+}
+body main section:nth-child(3) {
+  margin-bottom: 85px;
+}
+body footer {
+  align-items: center;
+  background-color: #222222;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  height: 191px;
+  justify-content: space-around;
+}
+@media (min-width: 1024px) {
+  body footer {
+    flex-direction: row;
+    height: 216px;
+    justify-content: space-between;
+  }
+  body footer div:nth-child(1) {
+    margin-left: 76.14px;
+  }
+  body footer div:nth-child(2) {
+    margin-right: 75px;
+  }
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+}
+.logo h1 {
+  margin-left: 19.93px;
+}
+.logo h1 span {
+  color: #D01418;
+}
+
+.banner {
+  align-items: center;
+  background-image: url("../../../build/img/banner-game-shop.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 512px;
+  justify-content: center;
+}
+.banner p {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  width: 336px;
+}
+@media (min-width: 1024px) {
+  .banner p {
+    width: auto;
+  }
+}
+.banner p span {
+  color: #D01418;
+  margin-right: 10px;
+}
+.banner a {
+  background-color: #D01418;
+  border-radius: 5px;
+  color: #FFFFFF;
+  margin-top: 50px;
+  padding: 16px 61px;
+  text-decoration: none;
+}
+
+.contenedorDestacados {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  .contenedorDestacados {
+    flex-direction: row;
+  }
+}
+
+.card {
+  background-color: #FFFFFF;
+  margin: 15px;
+  width: 265px;
+}
+
+.cardImg {
+  padding: 30px 68px;
+}
+
+.cardInfo {
+  margin: 21px 20px;
+  text-align: start;
+}
+.cardInfo small {
+  color: #619D00;
+}
+
+.precio {
+  font-size: 25px;
+}
+
+.cuotas {
+  margin: 4px 0;
+}
+
+.contenedorEstrella {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  .contenedorEstrella {
+    flex-direction: row;
+    margin: 0 6rem;
+  }
+}
+
+.productoEstrella {
+  background-size: cover;
+  border-radius: 5px;
+  height: 108px;
+  margin: 20px 0;
+  width: 69.56%;
+}
+.productoEstrella p {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  left: 96px;
+  position: relative;
+  top: 45px;
+}
+.productoEstrella:nth-child(1) {
+  background-image: url("../../../build/img/banner-sillas.png");
+}
+.productoEstrella:nth-child(2) {
+  background-image: url("../../../build/img/banner-computadoras.png");
+}
+@media (min-width: 1024px) {
+  .productoEstrella {
+    height: 135px;
+    width: 35.25%;
+  }
+}
+
+.footerRedes {
+  font-size: 25px;
+  margin-bottom: 21.99px;
+}
+.footerRedes div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+}
+.footerRedes div a:nth-child(1) {
+  color: #14AED0;
+}
+.footerRedes div a:nth-child(2) {
+  color: #1476D0;
+}
+.footerRedes div a:nth-child(3) {
+  color: #CE0CFF;
+}
+
+.derechos {
+  background-color: #C4C4C4;
+  padding: 7px 0;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

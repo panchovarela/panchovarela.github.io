@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Roboto&display=swap");
+/*** Colores ***/
+/*** Media Queries ***/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*** Colores ***/
+/*** Media Queries ***/
+body {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+}
+body header {
+  background-color: #00669F;
+}
+body header div {
+  align-items: center;
+  display: flex;
+}
+body header div h1 {
+  font-weight: 400;
+  left: 26px;
+  position: relative;
+}
+body header div img {
+  padding: 1rem 0.4rem;
+  width: 8rem;
+}
+body header p {
+  background-color: #1CD1B0;
+}
+body header p span {
+  color: #000000;
+  font-weight: bold;
+  left: 1.5%;
+  position: relative;
+}
+body main section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  body main section {
+    flex-direction: row;
+    height: 912px;
+    justify-content: center;
+  }
+}
+body main form {
+  align-items: center;
+  background-color: #00669F;
+  border-radius: 49.09px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Inter", sans-serif;
+  justify-content: center;
+  margin: 3rem 14rem;
+  position: relative;
+  right: 12.5rem;
+  width: 90vw;
+}
+body main form button {
+  background-color: #1CD1B0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 700;
+  height: 87px;
+  margin: 1em 0 0.5em;
+  width: 35%;
+}
+body main form button:hover {
+  background-color: #001D2D;
+  color: #FFFFFF;
+}
+body main form div {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  width: 80%;
+}
+@media (min-width: 1024px) {
+  body main form div {
+    width: 35.95%;
+  }
+}
+body main form div div {
+  height: 39.43%;
+  justify-content: space-around;
+  width: 100%;
+}
+body main form div div label {
+  margin: 0;
+}
+body main form div div span label {
+  margin: 0 0 0 1em;
+}
+body main form div hr {
+  margin: 1em 0;
+}
+body main form div input[type=date], body main form div input[type=text], body main form div select {
+  height: 63px;
+}
+body main form div input[type=date], body main form div input[type=text], body main form div select, body main form div textarea {
+  border: 1.53407px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15.34px;
+  color: #000000;
+  outline: none;
+}
+body main form div label {
+  margin: 0 0 1em 0;
+}
+body main form div label[for=archivo] {
+  margin: 0 0 2em 0;
+}
+body main form div label[for=nombre]::before {
+  content: "*";
+}
+body main form div:nth-child(4) label::before {
+  content: "*";
+}
+body main form div:nth-child(8) div legend {
+  margin-bottom: 7px;
+}
+body main form div:nth-child(8) div span {
+  margin: 6px 0;
+}
+body main form div:nth-child(8) div:nth-child(1) {
+  height: 60.57%;
+}
+body main form h2 {
+  font-size: 2em;
+  font-weight: 900;
+  padding: 0.3em;
+}
+body main form h2, body main form p {
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  body main form {
+    flex-direction: row;
+    left: 5rem;
+    width: 66.25vw;
+  }
+}
+body main nav ul {
+  background-color: #001D2D;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: flex-end;
+}
+body main nav ul li {
+  margin: 0.6rem 0.8rem;
+}
+body main nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+body footer {
+  background-color: #00669F;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card {
+  height: 533px;
+  margin: 70px 0;
+  width: 300px;
+}
+.card div:nth-child(1) {
+  background-size: cover;
+  border-radius: 16px 16px 0 0;
+  height: 36.48%;
+}
+.card div:nth-child(1) img {
+  position: relative;
+}
+.card div:nth-child(1) img:nth-child(1) {
+  bottom: 78px;
+  left: 21px;
+}
+.card div:nth-child(1) img:nth-child(2) {
+  border-radius: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  left: 57px;
+  top: 128px;
+  width: 120px;
+}
+.card div:nth-child(2) {
+  align-items: center;
+  background-color: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  height: 63.52%;
+  justify-content: space-around;
+}
+.card div:nth-child(2) a {
+  background-color: #00669F;
+  color: #FFFFFF;
+  font-size: 15px;
+  margin: 37px 0 18.48px;
+  padding: 16px 46px;
+  text-decoration: none;
+}
+.card div:nth-child(2) h2 {
+  font-weight: 400;
+  margin: 73px 0 10px;
+  text-transform: uppercase;
+}
+.card div:nth-child(2) p {
+  margin: 0 17px;
+}
+.card:nth-child(1) div:nth-child(1) {
+  background-image: url("../../../build/img/portada-batman.png");
+}
+.card:nth-child(2) div:nth-child(1) {
+  background-image: url("../../../build/img/portada-harley-quinn.jpeg");
+}
+.card:nth-child(3) div:nth-child(1) {
+  background-image: url("../../../build/img/portada-superman.png");
+}
+.card:nth-child(3) div:nth-child(2) a {
+  margin-top: 23px;
+}
+@media (min-width: 1024px) {
+  .card {
+    margin: 0 60px;
+  }
+}
+
+.btnMas {
+  background-color: #00669F;
+  border-radius: 100%;
+  color: #FFFFFF;
+  font-size: 50px;
+  height: 60px;
+  position: fixed;
+  right: 13px;
+  text-align: center;
+  text-decoration: none;
+  top: 550px;
+  width: 60px;
+}
+.btnMas:hover {
+  background-color: #001D2D;
+}
+@media (min-width: 1024px) {
+  .btnMas {
+    position: absolute;
+    right: 60px;
+  }
+}
+
+#nombre, #fecha {
+  padding-left: 10px;
+}
+
+#descripcion {
+  height: 307px;
+  padding: 15px 10px;
+}
+#descripcion::-moz-placeholder {
+  font-size: large;
+}
+#descripcion::placeholder {
+  font-size: large;
+}/*# sourceMappingURL=style.css.map */

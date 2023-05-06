@@ -1,0 +1,324 @@
+@use '../../scss/utilidades/mixins' as m;
+@import "../../scss/utilidades/reset";
+@import "../../scss/utilidades/variables";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Roboto&display=swap');
+
+body{
+    color: $blanco;
+    font-family: 'Roboto', sans-serif;
+
+    header{
+        background-color: $colorPrimarioSupers;
+
+        div{
+            align-items: center;
+            display: flex;
+            
+            h1{
+                font-weight: 400;
+                left: 26px;
+                position: relative;
+            }
+
+            img{
+                padding: 1rem 0.4rem;
+                width: 8rem;
+            }
+        }
+
+        p{
+            background-color: $colorSecundarioSupers;
+
+            span{
+                color: $negro;
+                font-weight: bold;
+                left: 1.5%;
+                position: relative;
+            }
+        }
+    }
+
+    main{
+
+        section{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            @include m.desktop{
+                flex-direction: row;
+                height: 912px;
+                justify-content: center;
+            }
+        }
+
+        form{
+            align-items: center;
+            background-color: $colorPrimarioSupers;
+            border-radius: 49.09px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            font-family: 'Inter', sans-serif;
+            justify-content: center;
+            margin: 3rem 14rem;
+            position: relative;
+            right: 12.5rem;
+            width: 90vw;
+            
+            button{
+                background-color: $colorSecundarioSupers;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+                font-size: 2rem;
+                font-weight: 700;
+                height: 87px;
+                margin: 1em 0 0.5em;
+                width: 35%;
+
+                &:hover{
+                    background-color: $colorTerciarioSupers;
+                    color: $blanco;
+                }
+            }
+
+            div{
+                display: flex;
+                flex-direction: column;
+                margin: 1em;
+                width: 80%;
+
+                @include m.desktop{
+                    width: 35.95%;
+                }
+
+                div{
+                    height: 39.43%;
+                    justify-content: space-around;
+                    width: 100%;
+
+                    label{
+                        margin: 0;
+                    }
+
+                    span label{
+                        margin: 0 0 0 1em;
+                    }
+                }
+
+                hr{
+                    margin: 1em 0;
+                }
+
+                input[type="date"], input[type="text"], select{
+                    height: 63px;
+                }
+
+                input[type="date"], input[type="text"], select, textarea{
+                    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+                    border-radius: 15.34px;
+                    color: $negro;
+                    outline: none;
+                }
+
+                label{
+                    margin: 0 0 1em 0;
+                    
+                    &[for="archivo"]{
+                        margin: 0 0 2em 0;
+                    }
+
+                    &[for="nombre"]::before{
+                        content: "*";
+                    }
+                }
+
+                &:nth-child(4) label::before{
+                    content: "*";
+                }
+
+                &:nth-child(8){
+                    
+                    div{
+
+                        legend{
+                            margin-bottom: 7px;
+                        }
+
+                        span{
+                            margin: 6px 0;
+                        }
+                    }
+
+                    div:nth-child(1){
+                        height: 60.57%;
+                    }
+                }
+            }
+
+            h2{
+                font-size: 2em;
+                font-weight: 900;
+                padding: 0.3em;
+            }
+
+            h2, p{
+                text-align: center;
+                width: 100%;
+            }
+
+            @include m.desktop{
+                flex-direction: row;
+                left: 5rem;
+                width: 66.25vw;
+            }
+        }
+
+        nav ul{
+            background-color: $colorTerciarioSupers;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            display: flex;
+            justify-content: flex-end;
+
+            li{
+                margin: 0.6rem 0.8rem;
+
+                a{
+                    color: $blanco;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    footer{
+        background-color: $colorPrimarioSupers;
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+.card{
+    height: 533px;
+    margin: 70px 0;
+    width: 300px;
+
+    div:nth-child(1){
+        background-size: cover;
+        border-radius: 16px 16px 0 0;
+        height: 36.48%;
+
+        img{
+            position: relative;
+
+            &:nth-child(1){
+                bottom: 78px;
+                left: 21px;
+            }
+
+            &:nth-child(2){
+                border-radius: 100%;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                left: 57px;
+                top: 128px;
+                width: 120px;
+            }
+        }
+    }
+
+    div:nth-child(2){
+        align-items: center;
+        background-color: #F3F3F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: $negro;
+        display: flex;
+        flex-direction: column;
+        height: 63.52%;
+        justify-content: space-around;
+
+        a{
+            background-color: $colorPrimarioSupers;
+            color: $blanco;
+            font-size: 15px;
+            margin: 37px 0 18.48px;
+            padding: 16px 46px;
+            text-decoration: none;
+        }
+
+        h2{
+            font-weight: 400;
+            margin: 73px 0 10px;
+            text-transform: uppercase;
+        }
+
+        p{
+            margin: 0 17px;
+        }
+    }
+
+    &:nth-child(1){
+
+        div:nth-child(1){
+            background-image: url('../../../build/img/portada-batman.png');
+        }
+    }
+
+    &:nth-child(2){
+
+        div:nth-child(1){
+            background-image: url('../../../build/img/portada-harley-quinn.jpeg');
+        }
+    }
+
+    &:nth-child(3){
+
+        div:nth-child(1){
+            background-image: url('../../../build/img/portada-superman.png');
+        }
+
+        div:nth-child(2) a{
+            margin-top: 23px;
+        }
+    }
+
+    @include m.desktop{
+        margin: 0 60px;
+    }
+}
+
+.btnMas{
+    background-color: $colorPrimarioSupers;
+    border-radius: 100%;
+    color: $blanco;
+    font-size: 50px;
+    height: 60px;
+    position: fixed;
+    right: 13px;
+    text-align: center;
+    text-decoration: none;
+    top: 550px;
+    width: 60px;
+    
+    &:hover{
+        background-color: $colorTerciarioSupers;
+    }
+
+    @include m.desktop{
+        position: absolute;
+        right: 60px;
+    }
+}
+
+#nombre, #fecha{
+    padding-left: 10px;
+}
+
+#descripcion{
+    height: 307px;
+    padding: 15px 10px;
+
+    &::placeholder{
+        font-size: large;
+    }
+}

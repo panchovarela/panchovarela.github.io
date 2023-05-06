@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pet Shop</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="build/css/pet-shop/style.css">
+</head>
+
+<body>
+    <div class="menuSuperior">
+        <p>Grandes ofertas en comederos</p>
+        <div>
+            <span>Español <i class="fa-solid fa-angle-down"></i></span>
+            <span>ARG$ <i class="fa-solid fa-angle-down"></i></span>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="build/img/logo-gato.png" alt="Logo Gato">
+            <h1>Front<span>Cat&Dog</span></h1>
+            <img src="build/img/logo-perro.png" alt="Logo Perro">
+        </div>
+
+        <!-- Emet: nav>ul>li*4>a -->
+        <nav>
+            <ul type="none">
+                <li><a href="#"><img src="build/img/huella-blanca.png" alt="Huella blanca"></i>Categorías</a></li>
+                <li><a href="#"><img src="build/img/huella-blanca.png" alt="Huella blanca"></i>Pets</a></li>
+                <li><a href="#"><img src="build/img/huella-blanca.png" alt="Huella blanca"></i>Nosotros</a></li>
+                <li><a href="#"><img src="build/img/huella-blanca.png" alt="Huella blanca"></i>Contáctanos</a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars fa-2xl"></i>
+    </header>
+
+    <main>
+        <!-- Banner -->
+        <section>
+            <div class="banner">
+                <p>¡Es un placer tenerte aquí!</p>
+                <p>¡Comederos en descuento!</p>
+                <a href="#">Comederos</a>
+            </div>
+        </section>
+
+        <!-- Productos Destacados -->
+        <section>
+            <div class="contenedorDestacados">
+                <div>
+                    <img src="build/img/huella-naranja.png" alt="Huella naranja">
+                    <h2>Productos Destacados</h2>
+                    <div>
+                        <span>Comederos</span><span>-</span><span>Accesorios</span><span>-</span><span>Comida</span>
+                    </div>
+                </div>
+                <div>
+                    <article class="card">
+                        <img src="build/img/churrasquito.png" alt="Juguete Churrasquito">
+                        <h4>Juguete Churrasquito</h4>
+                        <p>$150</p>
+                    </article>
+                    <article class="card">
+                        <img src="build/img/comedero.png" alt="Comedero">
+                        <h4>Comedero para perro</h4>
+                        <p>$250</p>
+                    </article>
+                    <article class="card">
+                        <img src="build/img/huesito.png" alt="Juguete Huesito">
+                        <h4>Juguete Huesito</h4>
+                        <p>$650</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario -->
+        <form action="" method="get" class="formularioPrincipal">
+            <h3>Contáctanos</h3>
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            <input type="email" name="email" placeholder="Ingresá tu correo electrónico" required>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+            <div>
+                <button type="reset">Resetear</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <div class="contenedorSuscripcion">
+            <div>
+                <img src="build/img/mail.png" alt="Mail">
+                <p>Suscríbete para más novedades</p>
+            </div>
+            <form action="" method="get">
+                <input type="email" name="email-suscripcion" placeholder="Ingresá tu correo electrónico">
+                <button type="submit">Suscribirme</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Datos de la empresa -->
+        <section class="footerInfo">
+            <div>
+                <img src="build/img/icono-ubicacion.png" alt="Ubicación">
+                <div>
+                    <h4>Localidad</h4>
+                    <p>Calle - provincia</p>
+                </div>
+            </div>
+            <div>
+                <img src="build/img/icono-telefono.png" alt="Teléfono">
+                <div>
+                    <h4>Teléfono</h4>
+                    <p>Número de teléfono</p>
+                </div>
+            </div>
+            <div>
+                <img src="build/img/icono-email.png" alt="Email">
+                <div>
+                    <h4>Correo Electrónico</h4>
+                    <p>Dirección de correo</p>
+                </div>
+            </div>
+        </section>
+        <div class="logo">
+            <img src="build/img/logo-gato.png" alt="Logo Gato">
+            <h2>Front<span>Cat&Dog</span></h2>
+            <img src="build/img/logo-perro.png" alt="Logo Perro">
+        </div>
+    </footer>
+    
+    <div class="derechos">
+        <p>Todos los derechos reservados a Front End</p>
+    </div>
+</body>
+</html>

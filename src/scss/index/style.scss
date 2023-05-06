@@ -1,0 +1,124 @@
+@use '../../scss/utilidades/mixins' as m;
+@import "../../scss/utilidades/variables";
+
+body{
+
+    main{
+
+        section{
+
+            &:nth-child(odd){
+                background-color: $colorPrimario;
+                color: $blanco;
+            }
+
+            &:nth-child(1) div div[class="heading"]{
+                margin-bottom: 70px;
+            }
+        }
+    }
+
+    footer{
+        background-color: #53687E;
+        color: $blanco;
+        height: 420px;
+
+        div ul{
+            margin-top: 34px;
+
+            li{
+    
+                a{
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    color: $blanco;
+                    padding: 12px;
+                }
+    
+                &:nth-child(4){
+                    margin-right: 32px;
+                }
+            }
+        }
+
+        @include m.desktop{
+            height: 230px;
+
+            div{
+                width: 25%;
+            }
+        }
+    }
+}
+
+.heading{
+    margin: 70px 0 35px;
+
+    h1, h2{
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    div{
+        margin: 15px 0;
+        width: 308px;
+        
+        hr{
+            height: 4px;
+            opacity: 1;
+            width: 120px;
+        }
+    }
+
+    &:nth-child(2){
+        margin-top: 40px;
+    }
+}
+
+.btnPersonalizado{
+    background-color: $colorPrimario;
+    border: solid 2px $blanco;
+    border-radius: 5px;
+    color: $blanco;
+    padding: 10px;
+    text-decoration: none;
+
+    &:hover{
+        background-color: $blanco;
+        border: solid 2px $colorPrimario;
+        color: $colorPrimario;
+    }
+}
+
+.copyright{
+    background-color: #1A252F;
+    color: $blanco;
+    font-size: small;
+    height: 50px;
+}
+
+#portfolio div[class="card border border-0"]{
+    cursor: pointer;
+    transition: width 0.5s, height, 0.5s;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+#sobreMi button{
+    margin: 35px 0 70px;
+}
+
+#contacto form{
+    width: 90%;
+
+    button{
+        margin: 35px 0 70px;
+    }
+
+    @include m.desktop{
+        width: 60%;
+    }
+}

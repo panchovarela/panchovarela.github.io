@@ -1,0 +1,480 @@
+@use '../../scss/utilidades/mixins' as m;
+@import "../../scss/utilidades/reset";
+@import "../../scss/utilidades/variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+    header{
+        align-items: center;
+        background-color: $colorPrimarioPetShop;
+        display: flex;
+        height: 100px;
+        justify-content: space-between;
+
+        i[class="fa-solid fa-bars fa-2xl"]{
+            color: $blanco;
+            margin-right: 40px;
+        }
+
+        nav ul{
+            display: none;
+            margin-right: 40px;
+
+            li{
+                margin-left: 20px;
+
+                a{
+                    color: $blanco;
+                    text-decoration: none;
+
+                    img{
+                        margin-right: 2px;
+                        width: 15px;
+                    }
+                }
+            }
+        }
+
+        @include m.desktop{
+
+            i[class="fa-solid fa-bars fa-2xl"]{
+                display: none;
+            }
+
+            nav ul{
+                display: flex;
+            }
+        }
+    }
+
+    footer{
+        align-items: center;
+        background-color: $colorSecundarioPetShop;
+        display: flex;
+        flex-direction: column;
+        height: 326px;
+        justify-content: space-evenly;
+
+        @include m.desktop{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+.menuSuperior{
+    align-items: center;
+    background-color: #222222;
+    color: $blanco;
+    display: none;
+    height: 30px;
+    justify-content: space-between;
+
+    p{
+        margin-left: 90px;
+    }
+
+    div{
+        margin-right: 52px;
+
+        span{
+            margin-left: 12px;
+        }
+    }
+
+    @include m.desktop{
+        display: flex;
+    }
+}
+
+.logo{
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+
+    img{
+        &:nth-child(1){
+            margin-right: 2px;
+            width: 24.4px;
+        }
+
+        &:nth-child(3){
+            margin-left: 2px;
+            width: 29.4px;
+        }
+    }
+
+    &:nth-child(1){
+        color: $colorSecundarioPetShop;
+        margin-left: 35px;
+        
+        span{
+            color: $blanco;
+        }
+    }
+
+    &:nth-child(2){
+        color: $blanco;
+
+        span{
+            color: $colorPrimarioPetShop;
+        }
+    }
+
+    @include m.desktop{
+        font-size: 20px;
+
+        img{
+
+            &:nth-child(1){
+                width: 29px;
+            }
+    
+            &:nth-child(3){
+                width: 34px;
+            }
+        }
+
+        &:nth-child(2){
+            margin-right: 78.25px;
+        }
+    }
+}
+
+.banner{
+    background-image: url('../../../build/img/banner-pet-shop.png');
+    background-size: cover;
+    height: 440px;
+    text-align: center;
+    
+    a{
+        background-color: $colorPrimarioPetShop;
+        border-radius: 5px;
+        color: $blanco;
+        padding: 15px 23px;
+        position: absolute;
+        right: 78px;
+        text-decoration: none;
+        text-transform: uppercase;
+        top: 295px;
+    }
+    
+    p{
+        position: absolute;
+        color: $colorSecundarioPetShop;
+        
+        &:nth-child(1){
+            background-color: $blanco;
+            border-radius: 5px;
+            font-size: 25px;
+            padding: 12px 38px;
+            right: 59px;
+            top: 202px;
+            width: 365px;
+        }
+
+        &:nth-child(2){
+            right: 64px;
+            top: 268px;
+        }
+    }
+
+    @include m.desktop{
+
+        a{
+            top: 344px;
+            right: 192px;
+        }
+
+        p{
+            &:nth-child(1){
+                font-size: 30px;
+                top: 237px;
+                width: 421px;
+            }
+
+            &:nth-child(2){
+                right: 170px;
+                top: 313px;
+            }
+        }
+    }
+}
+
+.contenedorDestacados{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    div{
+
+        &:nth-child(1){
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 28.25px 0 43px;
+            text-align: center;
+            
+            div{
+                margin-top: 26.1px;
+    
+                span{
+                    color: #666666;
+                    margin-right: 21px;
+                }
+            }
+    
+            h2{
+                color: $colorSecundarioPetShop;
+                font-size: 40px;
+                width: 212.89px;
+            }
+    
+            img{
+                margin-bottom: 14.33px;
+                width: 90.38px;
+            }
+        }
+
+        &:nth-child(2){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @include m.desktop{
+
+        div{
+            
+            &:nth-child(1){
+                margin: 24.44px 0 49px;
+
+                div{
+                    margin-top: 20px;
+                }
+    
+                h2{
+                    width: auto;
+                }
+    
+                img{
+                    margin-bottom: 9.51px;
+                    width: 67px;
+                }
+            }
+
+            &:nth-child(2){
+                flex-direction: row;
+            }
+        }
+    }
+
+}
+
+.card{
+    background-color: #FBFAF6;
+    margin: 12.5px 0;
+    text-align: center;
+    
+    img{
+        width: 239px;
+    }
+
+    p{
+        color: $colorPrimarioPetShop;
+        margin: 7px 0 10px;
+    }
+
+    @include m.desktop{
+        margin: 0 12.5px;
+
+        img{
+            width: 262.03px;
+        }
+
+        p{
+            
+        }
+    }
+}
+
+.formularioPrincipal{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 90px 0;
+
+    div{
+        margin-top: 41px;
+
+        button{
+            border: none;
+            border-radius: 25px;
+            color: $blanco;
+            cursor: pointer;
+            padding: 13px 75.18px;
+
+            &[type="reset"]{
+                background-color: #8A8787;
+                margin-right: 6px;
+            }
+
+            &[type="submit"]{
+                background-color: $colorPrimarioPetShop;
+            }
+        }
+    }
+
+    h3{
+        color: $colorSecundarioPetShop;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    input{
+        background-color: $colorSecundarioPetShop;
+        border: none;
+        border-radius: 15px;
+        color: $blanco;
+        height: 40px;
+        margin: 5px 0;
+        padding-left: 10px;
+        width: 404px;
+
+        &:focus{
+            outline: none;
+        }
+        
+        &::placeholder{
+            color: #AB9C9C;
+        }
+    }
+
+    @include m.desktop{
+
+        div{
+            margin-top: 48px;
+
+            button{
+                padding: 8px 0;
+                width: 110px;
+            }
+        }
+
+        input{
+            margin: 10px 0;
+            padding-left: 15px;
+
+            &::placeholder{
+                color: $blanco;
+            }
+        }
+    }
+}
+
+.contenedorSuscripcion{
+    align-items: center;
+    background-color: $colorPrimarioPetShop;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-evenly;
+
+    div{
+        display: flex;
+
+        img{
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        p{
+            color: $blanco;
+            font-size: 20px;
+        }
+    }
+
+    form{
+
+        button{
+            background-color: $colorSecundarioPetShop;
+            border: none;
+            border-radius: 15px;
+            color: $blanco;
+            cursor: pointer;
+            font-size: 15px;
+            padding: 9px;
+        }
+
+        input{
+            border: none;
+            border-radius: 15px;
+            height: 40px;
+            margin-right: 9px;
+            padding-left: 15px;
+            width: 261px;
+
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    @include m.desktop{
+        flex-direction: row;
+        height: 100px;
+        justify-content: space-between;
+
+        div{
+            margin-left: 23px;
+        }
+
+        form{
+            margin-right: 47px;
+        }
+    }
+}
+
+.footerInfo{
+    order: 1;
+
+    div{
+        align-items: center;
+        display: flex;
+        margin: 10px 0;
+
+        div{
+            align-items: flex-start;
+            flex-direction: column;
+
+            h4{
+                color: $blanco;
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+
+            p{
+                color: #8A8787;
+                font-size: 13px;
+            }
+        }
+
+        img{
+            width: 68px;
+            margin-right: 15px;
+        }
+    }
+
+    @include m.desktop{
+        order: 0;
+        margin-left: 70px;
+    }
+}
+
+.derechos{
+    background-color: #222222;
+    color: $blanco;
+    text-align: center;
+}

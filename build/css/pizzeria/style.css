@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/*** Colores ***/
+/*** Media Queries ***/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*** Colores ***/
+/*** Media Queries ***/
+body {
+  font-family: "Roboto", sans-serif;
+}
+body header {
+  height: 135px;
+}
+body header, body footer {
+  align-items: center;
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+}
+body header div, body footer div {
+  align-items: center;
+  display: flex;
+  margin: 0 42px 0 35px;
+}
+body header div h1, body header div h2, body footer div h1, body footer div h2 {
+  font-size: 2rem;
+  color: #FC200C;
+  margin: 0 15px;
+}
+body header div h1 span:nth-child(1), body header div h2 span:nth-child(1), body footer div h1 span:nth-child(1), body footer div h2 span:nth-child(1) {
+  color: #39B24A;
+}
+body header div h1 span:nth-child(2), body header div h2 span:nth-child(2), body footer div h1 span:nth-child(2), body footer div h2 span:nth-child(2) {
+  color: #FFFFFF;
+}
+body header div img, body footer div img {
+  width: 125px;
+}
+body header nav, body footer nav {
+  margin-right: 7px;
+}
+body header nav ul, body footer nav ul {
+  display: flex;
+}
+body header nav ul li, body footer nav ul li {
+  margin: 40px 13px;
+}
+body header nav ul li a, body footer nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+body main section {
+  align-items: center;
+  background-color: #E5E5E5;
+  display: grid;
+  height: 688px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+body main section article {
+  border-radius: 5px;
+  height: 562.57px;
+  width: 97.94%;
+}
+body main section article h2 {
+  font-size: 1.8rem;
+  color: #FC200C;
+}
+body main section article h2 span {
+  color: #FFFFFF;
+}
+body main section article:nth-child(1) {
+  background-image: url("../../../build/img/delivery.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 12px;
+}
+body main section article:nth-child(1) h2 {
+  margin: 25px;
+}
+body main section article:nth-child(2) {
+  background-color: #FFFFFF;
+  font-weight: 700;
+  grid-template-rows: 32% 68%;
+  margin-right: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+body main section article:nth-child(2) div {
+  grid-row: 2/3;
+}
+body main section article:nth-child(2) div h3 {
+  font-size: 1.4rem;
+  margin-bottom: 28.4px;
+  text-align: center;
+}
+body main section article:nth-child(2) div ol li {
+  font-size: 1rem;
+  margin: 14.2px 0 14.2px 90px;
+}
+body main section article:nth-child(2) h2 {
+  align-self: center;
+  grid-column: 1/3;
+  justify-self: center;
+}
+body main section article:nth-child(2) img {
+  height: 183.18px;
+  justify-self: center;
+}
+body footer {
+  height: 150px;
+}
+body footer ul {
+  margin-left: 20px;
+}
+body footer ul li {
+  margin: 12px 0;
+}
+body footer ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
